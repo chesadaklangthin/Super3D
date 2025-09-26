@@ -81,8 +81,8 @@ func handle_effects(delta):
 		var horizontal_velocity = Vector2(velocity.x, velocity.z)
 		var speed_factor = horizontal_velocity.length() / movement_speed / delta
 		if speed_factor > 0.05:
-			if animation.current_animation != "MeleeLib/walk":
-				animation.play("MeleeLib/walk")
+			if animation.current_animation != "MeleeLib/HeavyRunning":
+				animation.play("MeleeLib/HeavyRunning")
 
 			if speed_factor > 0.3:
 				sound_footsteps.stream_paused = false
@@ -94,7 +94,7 @@ func handle_effects(delta):
 		elif animation.current_animation != "MeleeLib/HeavyIdle":
 			animation.play("MeleeLib/HeavyIdle", 0.1)
 			
-		if animation.current_animation == "MeleeLib/walk":
+		if animation.current_animation == "MeleeLib/HeavyRunning":
 			animation.speed_scale = speed_factor
 		else:
 			animation.speed_scale = 1.0

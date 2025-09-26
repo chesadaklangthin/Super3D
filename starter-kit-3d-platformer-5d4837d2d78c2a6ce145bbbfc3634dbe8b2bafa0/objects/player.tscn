@@ -54,9 +54,6 @@ transform = Transform3D(1, 0, 0, 0, 0.872931, 0.487844, 0, -0.487844, 0.872931, 
 [node name="leg-right" parent="Character/character/root" index="1"]
 transform = Transform3D(1, 0, 0, 0, 0.837576, -0.546321, 0, 0.546321, 0.837576, -0.125, 0.229, -0.193)
 
-[node name="torso" parent="Character/character/root" index="2"]
-transform = Transform3D(1, 0, 0, 0, 0.996194, 0.0871557, 0, -0.0871557, 0.996194, -1.80478e-15, 0.17625, -0.02375)
-
 [node name="arm-left" parent="Character/character/root/torso" index="0"]
 transform = Transform3D(0.965926, -0.258819, 0, 0.258819, 0.965926, 0, 0, 0, 1, 0.3, 0.175, 0)
 
@@ -75,7 +72,6 @@ normal_fade = 0.5
 
 [node name="ParticlesTrail" type="GPUParticles3D" parent="."]
 physics_interpolation_mode = 2
-visible = false
 material_override = SubResource("StandardMaterial3D_q7stj")
 cast_shadow = 0
 amount = 60
