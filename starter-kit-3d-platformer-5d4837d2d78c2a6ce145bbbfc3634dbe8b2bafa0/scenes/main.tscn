@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bqqgyqafm7xwp"]
+[gd_scene load_steps=20 format=3 uid="uid://bqqgyqafm7xwp"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_ahusb"]
 [ext_resource type="Script" uid="uid://djpme521r3cxe" path="res://scripts/main.gd" id="1_jkv2x"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://c5nsdiy08i6sy" path="res://items_Jamie/Turret Teleporter.glb" id="13_muem4"]
 [ext_resource type="PackedScene" uid="uid://cqijmg0041nyo" path="res://items_Jamie/Astronaut.glb" id="14_muem4"]
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="17_tk810"]
+[ext_resource type="FontFile" uid="uid://ltvmgdlq6kxa" path="res://fonts/THSarabunNew.ttf" id="18_dp3eg"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_38ys3"]
 font = ExtResource("17_tk810")
@@ -214,7 +215,8 @@ offset_left = 449.0
 offset_top = 658.0
 offset_right = 859.0
 offset_bottom = 698.0
-theme_override_font_sizes/font_size = 28
+theme_override_fonts/font = ExtResource("18_dp3eg")
+theme_override_font_sizes/font_size = 32
 text = "นายเจษฎา กลางถิ่น 663380304-3"
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
