@@ -207,11 +207,12 @@ offset_top = 64.0
 offset_right = 368.0
 offset_bottom = 123.0
 theme_override_fonts/font = ExtResource("18_dp3eg")
-text = "0"
+text = "0  นายเจษฎา กลางถิ่น 663380304-3"
 label_settings = SubResource("LabelSettings_38ys3")
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="HUD"]
+visible = false
 layout_mode = 0
 offset_left = 449.0
 offset_top = 658.0
